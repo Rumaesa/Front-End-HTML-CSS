@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  display: grid;
+  text-align: center;
+  /* justify-content: center; */
+  grid-template-columns: 100px 250px 1fr 300px;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+}
+
+nav,
+menu,
+section,
+aside {
+  padding-top: 24px;
+}
+
+nav {
+  background-color: #495057;
+  color: #fff;
+  grid-row: 1/-1;
+}
+
+section {
+  background-color: #f1f3f5;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  overflow: scroll;
+}
+.email {
+  background-color: #adb5bd;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trash {
+  stroke: #fff;
+  width: 30px;
+  height: 30px;
+}
+
+menu {
+  background-color: #b197fc;
+  /* height: 100px; */
+  grid-column: 2/-1;
+  align-items: center;
+  padding: 0 40px;
+  display: flex;
+  gap: 12px;
+}
+
+aside {
+  background-color: #f1f3f5;
+}
+
+button {
+  background-color: #7048e8;
+  /* display: inline-block; */
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+button:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
